@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박유정 사용설명서 (Resume)</title>
+    <!-- CSS까지 적용하고 싶을 때만 아래 줄을 유지하세요 -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- <img> 프로필 이미지 -->
+    <img src="" alt="박유정 프로필 이미지" width="150">
+    
+    <!-- <h>, <p> 태그 활용 소개 -->
+    <h1>박유정 사용 설명서</h1>
+    <p><strong>개체번호:</strong> No. 0401</p>
+    <p><strong>개체 소개:</strong> 호기심을 연료로 삼아 개발을 배우고 있는 신종 학습형 생명체.</p>
+    <p>
+        <strong>주요 서식지:</strong>
+        <!-- <a> 태그 활용 깃허브 레포지토리 링크 -->
+        <a href="https://github.com/RJ-Park">GitHub</a>
+    </p>
+    
+    <hr>
+    <!-- <ul>, <li> 태그 활용 -->
+    <h2>1. 서식 환경 및 기본 습성</h2>
+    <ul>
+        <li><strong>서식지:</strong> 집 책상 앞, 모니터 주변</li>
+        <li><strong>서식지 환경:</strong> 쾌적한 온도와 종종 안 터지는 와이파이와 고양이 두 마리가 늘어져 있는 곳</li>
+        <li><strong>특성:</strong> 새로 배운 내용은 직접 코드로 쳐보고 헤매며 머리 싸맴</li>
+        <li><strong>특성 참고 사항:</strong> 코딩 중 인상을 쓰고 있어도 화난 것이 아니라 집중한 상태임</li>
+        <li><strong>취미:</strong> 맛있는 음식 먹기, 음악 감상, 배운 내용 정리하기</li>
+        <li><strong>싫어하는 것:</strong> 원인 모를 에러 메시지, 저장 안 하고 꺼진 화면, 공복 상태</li>
+    </ul>
+    
+    <hr>
+    <!-- <ol>, <li> 태그 활용 -->
+    <h2>2. 영양 공급 가이드</h2>
+    <ol>
+        <li><strong>주식:</strong> 든든한 집밥과 친절한 강의 교안</li>
+        <li><strong>급여량:</strong> 하루 세 끼 규칙적인 식사 + 일일 코딩 복습 1회</li>
+        <li><strong>부식:</strong> 시원한 커피(또는 음료)와 달콤한 간식</li>
+        <li><strong>공급 시 주의 사항:</strong> 당이 떨어지면 오타가 급증하므로 제때 간식을 공급할 것</li>
+    </ol>
+    
+    <hr>
+    <!-- <table>, <thead>, <tbody>, <tr>, <th>, <td> 태그 활용 -->
+    <h2>3. 상세 능력치 및 특이사항</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>항목</th>
+                <th>구분</th>
+                <th>상세 내용</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>언어 능력</td>
+                <td>한국어 / Python, HTML, CSS</td>
+                <td>한국어 능통, 프로그래밍 언어는 연습 중</td>
+            </tr>
+            <tr>
+                <td>기타 사항</td>
+                <td>성장 조건</td>
+                <td>칭찬과 격려를 받으면 학습 효율이 소폭 상승함</td>
+            </tr>
+            <tr>
+                <td>특이사항</td>
+                <td>2026.10 ~ 현재</td>
+                <td>OZ코딩스쿨 캠프에서 학습자로 성실히 수련 중</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <hr>
+    <!-- <form>, <input>, <button> 태그 활용 메일 발송 폼 -->
+    <h2>4. 개체에게 메일 보내기</h2>
+    <form action="https://httpbin.org/post" method="post">
+        보내는 사람 이메일: <input type="email" name="email" placeholder="ex@example.com"><br>
+        메일 제목: <input type="text" name="title" placeholder="문의 제목을 입력하세요"><br>
+        메일 내용: <input type="text" name="message" placeholder="응원이나 문의 내용을 입력하세요"><br>
+        <button type="submit">메일 발송</button>
+    </form>
+
+</body>
+
+</html>
