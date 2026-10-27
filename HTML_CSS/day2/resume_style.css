@@ -1,0 +1,311 @@
+body {
+    text-align: left;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding-top: 60px;
+    padding-left: 200px;
+    margin: 0;
+}
+
+/* 왼쪽 사이드바 */
+.sidebar {
+    background-color: #f3effe;
+    color: #fff;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 100px;
+    height: calc(100vh - 60px);
+    position: fixed;
+    left: 0;
+    z-index: 900;
+    padding-top: 30px;
+}
+
+.sidebar-container {
+    padding: 0 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-menu li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: color 0.3s;
+}
+
+.sidebar-menu li a:hover {
+    color: #7b00ff;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    min-height: calc(100vh - 80px);
+}
+
+/* 헤더 */
+#resume-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    width: 100%;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* 원형 썸네일 로고 이미지 */
+.header-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid #ddd;
+}
+
+#resume-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.header-info {
+    font-size: 0.88rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+.header-divider {
+    color: #e0e0e0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.github-label {
+    font-size: 0.88rem;
+    color: #666;
+}
+
+#github {
+    color: #666;
+    text-decoration: none;
+}
+
+#github:hover {
+    color: #c2abff;
+    text-decoration: underline;
+}
+
+/* 본문 섹션 제목, 리스트 및 알약 모양 태그 뱃지 */
+section {
+    margin-bottom: 35px;
+}
+
+main h2 {
+    font-size: 1.5em;
+    border-left: 5px solid #333;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+#introduce p {
+    color: #555;
+    font-size: 1.05em;
+    margin-bottom: 30px;
+    white-space: pre-line;
+}
+
+.experience-item {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.experience-info .company {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #222;
+}
+
+.experience-info .period {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.experience-item .role {
+    margin-bottom: 10px;
+}
+
+.experience-item .position {
+    font-weight: 600;
+    color: #555;
+}
+
+.experience-item .rank {
+    font-weight: 500;
+    color: #888;
+    font-size: 0.9em;
+    margin-left: 8px;
+    padding-left: 8px;
+    border-left: 1px solid #ddd;
+}
+
+.experience-item .details {
+    margin: 0;
+    padding-left: 20px;
+    color: #666;
+    font-size: 0.95em;
+}
+
+.experience-item .details li {
+    margin-bottom: 5px;
+}
+
+.skills-group {
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.skills-group h3 {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: #f0f2f5;
+    color: #476282;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+/* 상세 능력치 테이블 */
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.education-table thead th {
+    border-bottom: 2px solid #eee;
+    color: #333;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.education-table th {
+    text-align: left;
+    width: 150px;
+    color: #888;
+    font-weight: 400;
+    font-size: 0.9em;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.education-table td {
+    padding: 10px 0;
+    color: #444;
+    font-weight: 500;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+/* 태블릿용 반응형 디자인 */
+@media (max-width: 768px) {
+    body {
+        padding-left: 0;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .sidebar-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container {
+        margin: 20px 15px;
+        padding: 25px 20px;
+    }
+
+    .header-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 15px;
+    }
+
+    #resume-header span {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
