@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개체 사용 설명서 (Resume)</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">    <!-- External CSS 활용 -->
+    <link rel="stylesheet" href="./resume_style.css">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 상단 헤더,프로필 이미지 -->
+    <header id="resume-header">
+        <div class="header-container">
+            <div class="header-left">
+                <!-- 왼쪽 원형 로고 썸네일 -->
+                <img src="./surfingcat.webp" alt="로고 썸네일" class="header-logo">
+                <h1>개체 사용 설명서</h1>
+                <span class="header-info"><i class="fa-solid fa-hashtag"></i> 개체 번호: No.0401</span>
+                <span class="header-divider">|</span>
+                <span class="header-info"><i class="fa-solid fa-paw"></i> 분류: 학습모드 인간형 생명체</span>
+            </div>
+    
+            <!-- GitHub -->
+            <div class="header-right">
+                <span class="github-label"><i class="fa-solid fa-location-dot"></i> 주요 출몰지:</span>
+                <a href="https://github.com/RJ-Park" target="_blank" id="github">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 왼쪽 사이드바 -->
+<aside class="sidebar">
+    <nav class="sidebar-container">
+        <ul class="sidebar-menu">
+            <li><a href="#introduce" class="active">개체 사용 설명서</a></li>
+            <li><a href="#portfolio">성장 기록지</a></li>
+            <li><a href="#feeding">영양 공급 가이드</a></li>
+            <li><a href="#specs">상세 능력치</a></li>
+            <li><a href="#" onclick="window.print()">설명서(PDF) 가져가기</a></li>
+        </ul>
+    </nav>
+</aside>
+
+
+<!-- 가운데 컨테이너 -->
+<div class="container">
+
+    <!-- 메인 본문 -->
+    <main>
+        <!-- 체 소개 및 서식 환경/습성 -->
+        <section id="introduce">
+            <h2>Introduce (개체 소개 및 서식 습성)</h2>
+            <p>호기심을 연료로 삼아 개발을 배우고 있는 학습모드 인간 생명체입니다.
+                새로 배운 내용은 직접 코드로 쳐보고 헤매며 머리를 싸매는 습성이 있습니다.</p>
+    
+            <div class="experience-item">
+                <div class="experience-info">
+                    <span class="company">서식 환경 및 기본 습성</span>
+                    <span class="period">상시 관찰됨</span>
+                </div>
+                <div class="role">
+                    <span class="position">주요 서식지</span>
+                    <span class="rank">집 책상 앞, 모니터 주변</span>
+                </div>
+                <ul class="details">
+                    <li><strong>서식지 환경:</strong> 쾌적한 온도와 종종 안 터지는 와이파이가 있으며 고양이 두 마리가 늘어져 있는 곳</li>
+                    <li><strong>특성:</strong> 새로 배운 내용은 직접 코드로 쳐보고 헤매며 머리 싸맴</li>
+                    <li><strong>특성 참고 사항:</strong> 코딩 중 인상을 쓰고 있어도 화난 것이 아니라 집중한 상태임</li>
+                </ul>
+            </div>
+        </section>
+        <!-- 성장 기록지 -->
+        <section id="portfolio">
+            <h2>Growth Log (성장 기록지)</h2>
+            <div class="experience-item">
+                <div class="experience-info">
+                    <span class="company">OZ코딩스쿨 AI 헬스케어 부트캠프</span>
+                    <span class="period">2026.07 ~ 현재</span>
+                </div>
+                <div class="role">
+                    <span class="position">Backend Learner</span>
+                    <span class="rank">수련생</span>
+                </div>
+                <div class="project">
+                    <div class="project-header">
+                        <span class="project-name">HTML/CSS 개체 사용 설명서 웹페이지 구축</span>
+                        <span class="project-period">Day 1 ~ Day 3</span>
+                    </div>
+                    <ul class="details">
+                        <li>시맨틱 태그와 테이블, 리스트를 활용한 개체 기본 명세서 작성</li>
+                        <li>고정 헤더(Fixed Header), 사이드 네비게이션 바(Navbar) 및 Flexbox 레이아웃 적용</li>
+                        <li>화면 크기에 따라 배치가 자동으로 바뀌는 반응형(Media Query) 구현</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 알약 모양 뱃지 -->
+        <section>
+            <h2>Preferences &amp; Languages (기호 및 능력)</h2>
+    
+            <div class="skills-group">
+                <h3>FAVORITE / HOBBY (취미)</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">맛있는 음식 먹기</span>
+                    <span class="skill-tag">음악 감상</span>
+                    <span class="skill-tag">멍때리며 코드 보기</span>
+                </div>
+            </div>
+    
+            <div class="skills-group">
+                <h3>DISLIKE (싫어하는 것)</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">원인 모를 에러 메시지</span>
+                    <span class="skill-tag">저장 안 하고 꺼진 화면</span>
+                    <span class="skill-tag">공복 상태</span>
+                </div>
+            </div>
+    
+            <div class="skills-group">
+                <h3>Skill & Certification (능력 및 자격증)</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Python (연습 중)</span>
+                    <span class="skill-tag">HTML (연습 중)</span>
+                    <span class="skill-tag">CSS (연습 중)</span>
+                    <span class="skill-tag">1급 응급구조사</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 영양 공급 가이드 -->
+        <section id="feeding">
+            <h2>Feeding Guide (영양 공급 가이드)</h2>
+            <div class="experience-item">
+                <div class="experience-info">
+                    <span class="company">일일 급여 및 관리 수칙</span>
+                    <span class="period">1일 3식 + 간식 필수</span>
+                </div>
+                <ol class="details">
+                    <li><strong>주식:</strong> 든든한 집밥과 친절한 강의 교안</li>
+                    <li><strong>급여량:</strong> 하루 세 끼 규칙적인 식사 + 일일 코딩 복습</li>
+                    <li><strong>부식:</strong> 시원한 커피(또는 음료)와 달콤한 간식</li>
+                    <li><strong>공급 시 주의 사항:</strong> 당이 떨어지면 오타가 급증하므로 제때 간식을 공급할 것</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- 상세 능력치 및 특이사항  -->
+        <section id="specs">
+            <h2>Specs &amp; Notes (상세 능력치 및 특이사항)</h2>
+            <table class="education-table">
+                <thead>
+                    <tr>
+                        <th>항목</th>
+                        <th>구분</th>
+                        <th>상세 내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>언어 능력</th>
+                        <td>Python, HTML, CSS</td>
+                        <td>현재 프로그래밍 언어 연습 중</td>
+                    </tr>
+                    <tr>
+                        <th>기타 사항</th>
+                        <td>성장 조건</td>
+                        <td>칭찬과 격려에 학습 효율이 소폭 상승</td>
+                    </tr>
+                    <tr>
+                        <th>특이사항</th>
+                        <td>2026.07 ~ 현재</td>
+                        <td>OZ코딩스쿨 부트캠프에서 학습모드로 실시간 교육 중</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+</body>
+</html>
