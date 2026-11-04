@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px 16px;
+    background-color: #eef1f4;
+    font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+    color: #2c3e50;
+}
+
+.tracker {
+    max-width: 1040px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 32px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 0 0 24px;
+}
+
+/* ---------- 탭 ---------- */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #e9ecef;
+    color: #2c3e50;
+}
+
+.tab.active {
+    background-color: #263445;
+    color: #fff;
+}
+
+#fav-count {
+    display: inline-block;
+    min-width: 22px;
+    margin-left: 4px;
+    padding: 0 6px;
+    border-radius: 10px;
+    background-color: #f1c40f;
+    color: #263445;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* ---------- 검색창 ---------- */
+#search {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 8px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccd3da;
+    border-radius: 4px;
+}
+
+#search:focus {
+    outline: none;
+    border: 2px solid #263445;
+}
+
+.status {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin: 0 0 16px;
+    min-height: 1.2em;
+}
+
+.status.error {
+    color: #e74c3c;
+}
+
+/* ---------- 표 ---------- */
+.table-wrap {
+    overflow-x: auto; /* 좁은 화면에서는 표만 가로 스크롤 */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 640px;
+}
+
+thead th {
+    background-color: #f6f7f9;
+    text-align: left;
+    font-weight: 600;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #edf0f2;
+}
+
+.num {
+    text-align: right;
+    font-variant-numeric: tabular-nums; /* 숫자 폭을 같게 해서 덜 흔들리게 */
+}
+
+.symbol {
+    font-weight: 700;
+}
+
+.up {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+.down {
+    color: #2e86de;
+    font-weight: 700;
+}
+
+/* ---------- 관심(별) 버튼 ---------- */
+.star {
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #bdc3c7;
+    padding: 0 6px;
+    line-height: 1;
+}
+
+.star.on {
+    color: #f1c40f;
+}
+
+/* 가격이 바뀐 순간 잠깐 깜빡이는 효과 */
+.flash-up {
+    animation: flashUp 0.8s;
+}
+
+.flash-down {
+    animation: flashDown 0.8s;
+}
+
+@keyframes flashUp {
+    from { background-color: rgba(231, 76, 60, 0.18); }
+    to { background-color: transparent; }
+}
+
+@keyframes flashDown {
+    from { background-color: rgba(46, 134, 222, 0.18); }
+    to { background-color: transparent; }
+}
+
+.empty {
+    text-align: center;
+    color: #95a5a6;
+    padding: 40px 0;
+}

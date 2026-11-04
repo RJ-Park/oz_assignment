@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콘솔창 계산기 프로그램</title>
+    <style>
+        body {
+            font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 0 16px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 6px;
+        }
+
+        code {
+            background: #f3effe;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>콘솔창 계산기 프로그램</h1>
+
+    <h2>Windows OS의 경우</h2>
+    <p>1. <code>F12</code> 키를 눌러 콘솔 창을 여세요.</p>
+    <p>2. <code>start()</code> 를 콘솔창에 입력하여 계산기를 실행합니다.</p>
+
+    <h2>Mac OS의 경우</h2>
+    <p>1. <code>Option + Command + I</code> 키를 눌러 콘솔 창을 여세요.</p>
+    <p>2. <code>start()</code> 를 콘솔창에 입력하여 계산기를 실행합니다.</p>
+
+    <h2>지원 기능</h2>
+    <ul>
+        <li>사칙연산 <code>+ - * /</code> 및 소수점, 음수(<code>3 * -2</code>)</li>
+        <li>긴 계산식 (예: <code>1 + 2 + 3 * 5 + 6 / 3</code>)</li>
+        <li>연산자 우선순위: <code>*</code>, <code>/</code> 를 먼저 계산</li>
+        <li>잘못된 입력·0으로 나누기 오류 안내</li>
+    </ul>
+
+    <script src="./calculator.js"></script>
+</body>
+
+</html>
